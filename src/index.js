@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './App.scss';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { createStore } from 'redux';
@@ -10,8 +10,8 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import weatherReducers from './reducers'
 import { applyMiddleware } from 'redux';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import Weather from './components/Weather'
-import Countries from './components/Countries'
+import Weather from './components/Weather';
+import Countries from './components/Countries';
 
 let store = createStore(weatherReducers,composeWithDevTools(applyMiddleware(thunk)));
 

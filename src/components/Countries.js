@@ -11,7 +11,7 @@ class Countries extends Component {
         return (
             <div>
                 <Link to="/weather/alexandria">
-                    <button value="Alexandria,eg" className="btn btn-default" onClick={this.handelClick.bind(this)}>
+                    <button value="Alexandria,eg" className="btn btn-default btn-custom" onClick={this.handelClick.bind(this)}>
                         Alexandria,eg
                     </button>
                 </Link>
